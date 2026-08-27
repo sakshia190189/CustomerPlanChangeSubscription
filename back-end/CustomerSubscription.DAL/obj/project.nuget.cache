@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "tUpnCPof9TA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IBKS_Dummy\\Downloads\\CustomerSubscription\\CustomerSubscription\\CustomerSubscription.DAL\\CustomerSubscription.Dal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.30\\microsoft.entityframeworkcore.8.0.30.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.30\\microsoft.entityframeworkcore.abstractions.8.0.30.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.30\\microsoft.entityframeworkcore.analyzers.8.0.30.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.30\\microsoft.entityframeworkcore.relational.8.0.30.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\6.0.1\\microsoft.extensions.configuration.usersecrets.6.0.1.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\IBKS_Dummy\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

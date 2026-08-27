@@ -1,0 +1,105 @@
+[
+  {
+    "ContainingType": "CustomerSubscription.Services.Controllers.CustomerController",
+    "Method": "GetCustomers",
+    "RelativePath": "api/customer/getCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerSubscription.Services.Controllers.CustomerSubscriptionPlanController",
+    "Method": "ChangePlan",
+    "RelativePath": "api/customerSubscriptionPlan/{customerSubscriptionId}/change-plan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerSubscriptionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerSubscription.Shared.Models.ChangePlanRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerSubscription.Shared.Models.PlanChangeCostDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerSubscription.Services.Controllers.CustomerSubscriptionPlanController",
+    "Method": "GetCustomerSubscriptionPlans",
+    "RelativePath": "api/customerSubscriptionPlan/customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerSubscription.Services.Controllers.SubscriptionPlanController",
+    "Method": "GetSubscriptionPlans",
+    "RelativePath": "api/subscriptionPlan/getSubscriptionPlans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerSubscription.Services.Controllers.SubscriptionPricingController",
+    "Method": "GetPlanChangeCost",
+    "RelativePath": "api/subscriptionPricing/{customerSubscriptionId}/plan-change-cost",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerSubscriptionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "existingPlanId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPlanId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerSubscription.Shared.Models.PlanChangeCostDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

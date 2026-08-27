@@ -1,0 +1,231 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CustomerSubscription.Services",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/customer/getCustomers": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customerSubscriptionPlan/customer/{customerId}": {
+      "get": {
+        "tags": [
+          "CustomerSubscriptionPlan"
+        ],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customerSubscriptionPlan/{customerSubscriptionId}/change-plan": {
+      "post": {
+        "tags": [
+          "CustomerSubscriptionPlan"
+        ],
+        "parameters": [
+          {
+            "name": "customerSubscriptionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePlanRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePlanRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePlanRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/subscriptionPlan/getSubscriptionPlans": {
+      "get": {
+        "tags": [
+          "SubscriptionPlan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/subscriptionPricing/{customerSubscriptionId}/plan-change-cost": {
+      "get": {
+        "tags": [
+          "SubscriptionPricing"
+        ],
+        "parameters": [
+          {
+            "name": "customerSubscriptionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "existingPlanId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "newPlanId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanChangeCostDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ChangePlanRequestDto": {
+        "type": "object",
+        "properties": {
+          "NewPlanId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlanChangeCostDto": {
+        "type": "object",
+        "properties": {
+          "CustomerSubscriptionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ExistingPlanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ExistingPlanName": {
+            "type": "string",
+            "nullable": true
+          },
+          "NewPlanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "NewPlanName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ExistingPlanRemainingCredit": {
+            "type": "number",
+            "format": "double"
+          },
+          "NewPlanProratedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "NetCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "RemainingDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "TotalDaysInCycle": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
